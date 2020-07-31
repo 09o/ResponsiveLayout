@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="lib/scrollReveal/scrollreveal.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="lib/glide/glide.core.min.css">
+  <link rel="stylesheet" href="lib/glide/glide.theme.min.css">
+  <title>NoSaka</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">の坂</div>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#photo">PHOTO</a>
+      <a href="#schedule">SCHEDULE</a>
+      <a href="#member">MEMBER</a>
+      <a href="#news">NEWS</a>
+      <i class="fas fa-search"></i>
+    </nav>
+    <!-- 折叠导航按钮 -->
+    <div class="burger">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+  </header>
+  <!-- 首页轮播图 -->
+  <!-- glide初始化 -->
+  <div id="home" class="glide">
+    <!-- glide组件 -->
+    <div class="glide__track" data-glide-el="track">
+      <!-- 轮播容器 -->
+      <div class="glide__slides">
+        <!-- 每个轮播元素 -->
+        <div class="glide__slide">
+          <!-- 轮播图中内容显示 -->
+          <div class="slide-caption">
+            <h1>乃木坂46の映像商品『ALL MV COLLECTION2』</h1>
+            <h3>
+              「ALL MV COLLECTION」から、約５年振りとなるMusic Video集の発売です！！
+            </h3>
+            <button class="explore-btn">MORE</button>
+          </div>
+          <!-- 图片背景遮盖层 -->
+          <div class="backdrop"></div>
+          <img src="imgs/1080_15.png" alt="">
+        </div>
+        <div class="glide__slide">
+          <!-- 轮播图中内容显示 -->
+          <div class="slide-caption left">
+            <h1>乃木坂46のシングル『きっかけ』</h1>
+            <h3>
+              アルバム1位は、前作『透明な色』（昨年1月発売）に続いて2作連続通算2作目
+            </h3>
+            <button class="explore-btn">MORE</button>
+          </div>
+          <!-- 图片背景遮盖层 -->
+          <div class="backdrop"></div>
+          <video src="videos/乃木坂46 『きっかけ』-6W8mmtgeOzY.f137.mp4" muted autoplay loop></video>
+        </div>
+      </div>
+    </div>
+    <!-- 切换按钮 -->
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+        < </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            >
+          </button>
+    </div>
+    <!-- 控制圆点 -->
+    <div class="glide__bullets" data-glide-el="controls[nav">
+      <button class="glide__bullet" data-glide-dir="0"></button>
+      <button class="glide__bullet" data-glide-dir="1"></button>
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="content-wrapper">
+    <!-- 有单独功能聚合的区域使用 section 标签 -->
+    <!-- About -->
+    <section id="about" class="about">
+      <h2 class="title1">ABOUT NOSAKA</h2>
+      <p class="intro">
+        Show the features of Nogizaka46, let everyone know more, and share the happiness.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-star-half-alt"></i>
+          <h4 class="feature-title">握手会</h4>
+          <p class="feature-content">メンバー個別の握手会（握手会のみの実施です。）</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-calendar-alt"></i>
+          <h4 class="feature-title">スケジュール</h4>
+          <p class="feature-content">スケジュール、出演メンバーが予告なく変更される場合があります</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-address-card"></i>
+          <h4 class="feature-title">メンバー紹介</h4>
+          <p class="feature-content">皆さんにもっと情報をしらせて</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-compact-disc"></i>
+          <h4 class="feature-title">DISCOGRAPHY</h4>
+          <p class="feature-content">ニューディスコグラフィーの販売情報の最速更新</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-blog"></i>
+          <h4 class="feature-title">ブログ</h4>
+          <p class="feature-content">メンバーのブログを即座に更新する</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-envelope-open"></i>
+          <h4 class="feature-title">MOBILE MAIL</h4>
+          <p class="feature-content">メンバーのmobile mailを即座に更新する</p>
+        </div>
+      </div>
+    </section>
+    <!-- Photo -->    
+    <section id="photo" class="photo sectionbg">
+      <h2 class="title1">NOGIPHOTO</h2>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="*">All</button>
+        <!-- data-filter指定class （选择器） -->
+        <button class="filter-btn" data-filter=".live">ライブ</button>
+        <button class="filter-btn" data-filter=".special">スペシャル</button>
+        <button class="filter-btn" data-filter=".report">レポート</button>
+      </div>
+      <div class="showphotos">
+        <div class="photo-item report">
+          <img src="imgs/report1.jpg" alt="">
+        </div>
+        <div class="photo-item live">
+          <img src="imgs/zingu_4.jpg" alt="">
+        </div>
+        <div class="photo-item special live">
+          <img src="imgs/special1.jpg" alt="">
+        </div>
+        <div class="photo-item live">
+          <img src="imgs/zingu_16.jpg" alt="">
+        </div>
+        <div class="photo-item live">
+          <img src="imgs/zingu_21.jpg" alt="">
+        </div>
+        <div class="photo-item report">
+          <img src="imgs/report2.jpg" alt="">
+        </div>
+        <div class="photo-item live">
+          <img src="imgs/zingu_10.jpg" alt="">
+        </div>
+        <div class="photo-item special">
+          <img src="imgs/special2.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Schedule -->
+    <section id="schedule" class="schedule">
+      <h2 class="title1">SCHEDULE</h2>
+      <p class="intro">
+        スケジュール、出演メンバーが予告なく変更される場合があります。情報は随時更新いたします。
+      </p>
+      <div class="schedules">
+        <div class="schedule-item">
+          <i class="fab fa-stripe-s"></i>
+          <h2 class="schedule-title">佐藤楓</h2>
+          <p class="schedule-content">07月30日 18:00〜18:30 SHOWROOM「のぎおび」</p>
+        </div>
+        <div class="schedule-item">
+          <i class="fas fa-utensils"></i>
+          <h2 class="schedule-title">秋元真夏</h2>
+          <p class="schedule-content">07月30日 20:30〜 cookpadLive「まなったんのデキる嫁キブン」</p>
+        </div>
+        <div class="schedule-item">
+          <i class="fas fa-broadcast-tower"></i>
+          <h2 class="schedule-title">山崎怜奈</h2>
+          <p class="schedule-content">07月30日 18:00〜18:30 「チュウモリ木曜日推シマシ」内「乃木坂46 山崎怜奈の『推しの1コマ』」</p>
+        </div>
+        <div class="schedule-item">
+          <i class="fas fa-newspaper"></i>
+          <h2 class="schedule-title">賀喜遥香</h2>
+          <p class="schedule-content">07月30日 「月刊エンタメ」</p>
+        </div>
+        <div class="schedule-item">
+          <i class="fas fa-tv"></i>
+          <h2 class="schedule-title">金川紗耶</h2>
+          <p class="schedule-content">08月01日 10:25〜11:50 UHB北海道文化放送「いっとこ！みんテレ」金川紗耶</p>
+        </div>
+        <div class="schedule-item">
+          <i class="fas fa-mobile-alt"></i>
+          <h2 class="schedule-title">寺田蘭世</h2>
+          <p class="schedule-content">08月01日 寺田蘭世が乃木坂46内や芸能界のニュースを貪欲にキャッチし、らんぜの独特な感覚でどんどん発信していきます！</p>
+        </div>
+      </div>
+    </section>
+    <!-- Member -->
+    <section id="member" class="member sectionbg">
+      <h2 class="title1">MEMBER</h2>
+      <div class="members">
+        <div class="member-item">
+          <!-- 遮罩蒙版 -->
+          <div class="profile-img">
+            <img src="imgs/manatsu.jpg" alt="">
+          </div>
+          <h4 class="name">Akimoto Manatsu</h4>
+          <p class="generation">1期生 キャプテン</p>
+          <ul class="social-links">
+            <li><a href="#"><i class="fas fa-link"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+          </ul>
+        </div>
+        <div class="member-item">
+          <!-- 遮罩蒙版 -->
+          <div class="profile-img">
+            <img src="imgs/ranze.jpg" alt="">
+          </div>
+          <h4 class="name">Terada Ranze</h4>
+          <p class="generation">2期生 アンダー</p>
+          <ul class="social-links">
+            <li><a href="#"><i class="fas fa-link"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+          </ul>
+        </div>
+        <div class="member-item">
+          <!-- 遮罩蒙版 -->
+          <div class="profile-img">
+            <img src="imgs/kubo.jpg" alt="">
+          </div>
+          <h4 class="name">Kubo Shiori</h4>
+          <p class="generation">3期生 選抜メンバー</p>
+          <ul class="social-links">
+            <li><a href="#"><i class="fas fa-link"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+          </ul>
+        </div>
+        <div class="member-item">
+          <!-- 遮罩蒙版 -->
+          <div class="profile-img">
+            <img src="imgs/kakki.jpg" alt="">
+          </div>
+          <h4 class="name">Kakki Haruka</h4>
+          <p class="generation">4期生 選抜メンバー</p>
+          <ul class="social-links">
+            <li><a href="#"><i class="fas fa-link"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="data-section">
+      <div class="data-piece">
+        <i class="fas fa-record-vinyl"></i>
+        <div class="num">25</div>
+        <div class="data-desc">张单曲</div>
+      </div>
+      <div class="data-piece">
+        <i class="fas fa-music"></i>
+        <div class="num">5</div>
+        <div class="data-desc">张专辑作品</div>
+      </div>
+      <div class="data-piece">
+        <i class="fas fa-audio-description"></i>
+        <div class="num">1900+</div>
+        <div class="data-desc">万张销量</div>
+      </div>
+      <div class="data-piece">
+        <i class="fas fa-users"></i>
+        <div class="num">46</div>
+        <div class="data-desc">位成员</div>
+      </div>
+    </section>
+    <!-- News -->
+    <section id="news" class="news">
+      <h2 class="title1">NEWS</h2>
+      <p class="intro">乃木坂とメンバーの最新ニュース</p>
+      <div class="news-list">
+        <div class="new">
+          <div class="new-image-wrapper">
+            <img src="./imgs/noginew1.jpg" alt="">
+          </div>
+          <div class="meta">
+            <p class="data-published">
+              <i class="far fa-calendar"></i> 2020年07月30日
+            </p>
+            <p class="comments">
+              <i class="fas fa-hashtag"></i>メディア
+            </p>
+          </div>
+          <h2 class="new-title">乃木坂工事中視聴者の皆様へ、回答大募集！</h2>
+          <article>乃木坂工事中をご覧の皆様へ番組企画で使用するお題への回答大募集！
+            バナナマンのラジオで生まれたお題をはじめ、今回「乃木坂46が陰で言ってそう（言っていたら面白そう）なこと」を募集します。
+            詳しくはこちらのURLよりアクセスお願いします！</article>
+          <button class="readmore-btn">More</button>
+        </div>
+        <div class="new">
+          <div class="new-image-wrapper">
+            <img src="./imgs/shiorinews.jpg" alt="">
+          </div>
+          <div class="meta">
+            <p class="data-published">
+              <i class="far fa-calendar"></i> 2020年07月30日
+            </p>
+            <p class="comments"><i class="fas fa-hashtag"></i>メディア</p>
+          </div>
+          <h2 class="new-title">乃木坂46 久保史緒里の宮城・仙台旅しおり</h2>
+          <article>菓匠三全グランスタ東京店オープン記念として、オンラインショップ限定で、「乃木坂46 久保史緒里の宮城・仙台旅しおり」萩の月特別パッケージ2020が発売されます！
+            久保史緒里が、仙台を中心とした宮城の様々な観光名所を訪れ、その魅力を紹介するWEB動画のシリーズ企画「乃木坂46 久保史緒里の宮城・仙台旅しおり」をモチーフとした「萩の月」の特別パッケージになります。
+            ７月30日(木)よりオンラインショップ限定での発売になります。（※グランスタ東京店での販売はございません。）
+            是非チェックしてみてください！</article>
+          <button class="readmore-btn">More</button>
+        </div>
+        <div class="new">
+          <div class="new-image-wrapper">
+            <img src="./imgs/nogines3.jpg" alt="">
+          </div>
+          <div class="meta">
+            <p class="data-published">
+              <i class="far fa-calendar"></i> 2020年07月30日
+            </p>
+            <p class="comments"><i class="fas fa-hashtag"></i>リリース</p>
+          </div>
+          <h2 class="new-title">乃木坂46 第2弾ミュージックビデオ集</h2>
+          <article>2020年9月9日（水）に発売する乃木坂46 第2弾ミュージックビデオ集『ALL MV COLLECTION 2～あの時の彼女たち～』Blu-ray&DVDをセブンネットショッピングでご予約頂くと、限定特典として生写真をプレゼント！！
+            今回のために撮り下ろした生写真が全部で14種類です！
+            下記詳細をご確認のうえ、乃木坂46 第2弾ミュージックビデオ集『ALL MV COLLECTION 2～あの時の彼女たち～』Blu-ray&DVDをセブンネットショッピングで是非ご予約ください！！</article>
+          <button class="readmore-btn">More</button>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="footer-menus">
+      <div class="contact">
+        <p class="menu-title">Contact with us</p>
+        <p>Address: xxxxxxxxx</p>
+        <p>Tel: xxxxxxx</p>
+        <p>Fax: xxxxx</p>
+        <p>E-mail: xxxxx</p>
+      </div>
+      <div class="service-menu footer-menu">
+        <p class="menu-title">Service desc</p>
+        <ul class="menu-items">
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+        </ul>
+      </div>
+      <div class="service-menu footer-menu">
+        <p class="menu-title">Service desc</p>
+        <ul class="menu-items">
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+        </ul>
+      </div>
+      <div class="service-menu footer-menu">
+        <p class="menu-title">Service desc</p>
+        <ul class="menu-items">
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+        </ul>
+      </div>
+      <div class="service-menu footer-menu">
+        <p class="menu-title">Service desc</p>
+        <ul class="menu-items">
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Music</a></li>
+        </ul>
+      </div>
+      <p class="icp-info">xxxxx</p>
+      <p class="rights">
+        &copy; 2020 xxx
+      </p>
+      <div class="scrollToTop">
+        <a href="#home"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="lib/anime/anime.min.js"></script>
+  <script src="lib/glide/glide.min.js"></script>
+  <script src="lib/isotope/isotope.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
